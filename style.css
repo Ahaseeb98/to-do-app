@@ -1,0 +1,66 @@
+* {
+    font-family: monospace;
+    background: rgba(187, 187, 187, 0.712);
+    color: rgb(0, 0, 0);
+}
+.button {
+    outline: none;
+    margin-left: 800px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 70px; 
+    text-decoration: underline;
+    font-weight: bold;
+}
+#val {
+    border: none;
+    border: 5px solid rgb(15, 10, 10);
+    outline: none;
+    width: 800px;
+    height: 50px;
+    font-size: 20px;
+    background: floralwhite;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+li {
+    background: rgb(0, 3, 3);
+    list-style: none;
+    width: 800px;
+    text-align:center;
+    height: 50px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: 35px;
+    /* font-weight: ; */
+    /* padding-top: 20PX;*/ 
+    overflow: hidden;
+}
+li>button {
+    display: inline;
+    height: 50px;
+    float: right;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    background: royalblue;
+    z-index: .7;
+    
+}
+.mybtntop {
+    padding: 10px 15px;
+    background: royalblue;
+    display: inline;
+    margin: 0px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    
+}

@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>
+        To-do LIST
+    </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<center>
+<div>
+<h1>TO-DO APP</h1>
+<input  onkeypress="if (event.keyCode == 13) add()" type="text" id="val">
+
+
+<button class="mybtntop" onclick="add()"> ADD</button> 
+<button class="mybtntop" onclick="list.innerHTML =''"> DELETE ALL</button>
+
+
+  <div>
+    <ol id="list">
+
+    </ol>
+  </div>
+  
+</div> 
+</center>
+
+<script type="text/javascript">
+ function add(){
+  
+  
+ var val = document.getElementById("val");
+   var list = document.getElementById("list");
+     
+   
+   var li = document.createElement("LI");
+   var mybr = document.createElement("BR");
+   var btn = document.createElement("BUTTON");
+   var mybr = document.createElement("BR");
+   var text = document.createTextNode(val.value);
+   var delbtn = document.createTextNode("Delete");
+   
+
+   
+   
+   list.appendChild(li).appendChild(text);
+      list.appendChild(mybr);
+    list.appendChild(mybr);
+   li.appendChild(btn).appendChild(delbtn);
+   li.id="myli"
+  btn.id="delbtn";
+   btn.onclick= function deletee(){ document.getElementById("delbtn").parentElement.remove()};          
+
+   
+   val.value ="";
+   
+   
+ 
+   
+ };
+
+    </script>
+
+</body>
+</html>
